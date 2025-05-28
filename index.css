@@ -1,0 +1,100 @@
+/* General page setup */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #0b0c1d, #1b1c3a); /* Deep dark blue gradient */
+  color: #ffffff;
+}
+
+/* Centered main title */
+header {
+  text-align: center;
+  padding: 30px 0;
+  background-color: rgba(0, 0, 50, 0.4);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.main-title {
+  font-size: 3em;
+  color: #ffe066;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px #000;
+}
+
+/* Zodiac card styling */
+.zodiac-card {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 300px;
+  border-radius: 15px;
+  border: 1px solid #8888ff;
+  box-shadow: 0 0 15px rgba(138, 43, 226, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.zodiac-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+}
+
+/* Zodiac image */
+.zodiac-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain; /* Ensures no distortion */
+  margin: 0 auto 15px auto;
+  display: block;
+  filter: drop-shadow(0 0 5px #ffe066);
+  transition: none; /* No zoom or motion */
+}
+
+}
+
+/* Name, dates, description */
+.zodiac-name {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.zodiac-name a {
+  color: #add8e6;          /* Blue for untouched */
+  text-decoration: none;
+}
+
+.zodiac-name a:hover {
+  color: #ff4444;          /* Red on hover */
+}
+
+.zodiac-name a:visited {
+  color: #ee82ee;          /* Violet after click */
+}
+
+.zodiac-dates {
+  font-size: 1em;
+  margin: 10px 0;
+  color: #ffd700;
+}
+
+.zodiac-description {
+  font-size: 0.95em;
+  margin: 10px 0;
+  color: #f0f0f0;
+}
+
+/* Responsive layout */
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .zodiac-card {
+    margin: 15px;
+  }
+}

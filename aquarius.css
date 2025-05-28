@@ -1,0 +1,64 @@
+/* Base page settings */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  background: linear-gradient(to bottom, #0d0d1a, #1a1a2e);
+  color: #f3f3f3;
+}
+
+/* Sign name title */
+h1 {
+  text-align: center;
+  font-size: 3em;
+  margin-top: 30px;
+  color: #ffc107;
+  text-shadow: 0 0 10px #ffc107;
+}
+
+/* Symbol image */
+img {
+  display: block;
+  margin: 25px auto;
+  max-width: 120px;
+}
+
+/* Section titles */
+h2 {
+  text-align: center;
+  font-size: 1.8em;
+  margin-top: 40px;
+  color: #f8f8f2;
+  text-shadow: 0 0 5px #ffffff;
+}
+
+/* General list styling */
+ul {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px 30px;
+  border-radius: 12px;
+  list-style: square inside;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Navigation link back to index */
+a {
+  display: block;
+  text-align: center;
+  margin: 40px auto 20px;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #add8e6;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff4444;
+}
+
+a:visited {
+  color: #ee82ee;
+}
+

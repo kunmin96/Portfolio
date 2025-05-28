@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Data Sheet</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #fff;
+      color: #000;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      width: 100px;
+      height: 100px;
+      border: 2px solid black;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .header-text {
+      text-align: center;
+      flex-grow: 1;
+      margin-right: 100px;
+    }
+
+    .header-text h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .header-text p {
+      margin: 2px;
+    }
+
+    .top-info {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+
+    .section {
+      margin-top: 25px;
+    }
+
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+
+    .column {
+      flex: 1;
+      min-width: 200px;
+      padding: 5px;
+    }
+
+    label {
+      display: block;
+      font-size: 13px;
+      margin-bottom: 2px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+      width: 100%;
+      padding: 5px;
+      font-size: 13px;
+    }
+
+    .checkbox-group {
+      display: flex;
+      flex-direction: column;
+      font-size: 13px;
+    }
+
+    .two-column-section {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .two-column-section .column {
+      width: 48%;
+    }
+
+    .small-input {
+      width: 100px;
+    }
+
+    hr {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+  <img src="https://www.ue.edu.ph/mla/wp-content/uploads/2020/12/UE_RED_SEAL_09.png" alt="University Logo" style="width: 100%; height: 100%; border-radius: 50%;">
+</div>
+
+  <div class="header-text">
+    <p><strong>UNIVERSITY OF THE EAST</strong></p>
+    <p>ENROLLMENT SYSTEM</p>
+    <h1>PERSONAL DATA SHEET</h1>
+  </div>
+</header>
+
+<div class="top-info">
+  <div><strong>Program:</strong> <input type="text" class="small-input"></div>
+  <div><strong>Student #:</strong> <input type="text" class="small-input"></div>
+</div>
+
+<div class="section">
+  <div class="section-title">STUDENT DETAILS:</div>
+  <div class="row">
+    <div class="column">
+      <label>SURNAME:</label>
+      <input type="text">
+    </div>
+    <div class="column">
+      <label>GIVEN NAME:</label>
+      <input type="text">
+    </div>
+    <div class="column">
+      <label>MIDDLE NAME:</label>
+      <input type="text">
+    </div>
+    <div class="column">
+      <label>AUXILIARY NAME:</label>
+      <input type="text">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <label>City Address:</label>
+      <input type="text">
+    </div>
+    <div class="column">
+      <label>Zip Code:</label>
+      <input type="text">
+    </div>
+    <div class="column">
+      <label>Tel. No.:</label>
+      <input type="text">
+    </div>
+    <div class="column">
+      <label>Email Address:</label>
+      <input type="email">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <label>Home Address:</label>
+      <input type="text">
+    </div>
+    <div class="column">
+      <label>Zip Code:</label>
+      <input type="text">
+    </div>
+    <div class="column">
+      <label>Region:</label>
+      <input type="text">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <label>Birthday:</label>
+      <input type="text">
+    </div>
+    <div class="column">
+      <label>Age:</label>
+      <input type="text">
+    </div>
+    <div class="column">
+      <label>Birthplace:</label>
+      <input type="text">
+    </div>
+    <div class="column">
+      <label>Religion:</label>
+      <input type="text">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <label>Citizenship:</label>
+      <input type="text">
+    </div>
+    <div class="column">
+      <label>Sex:</label>
+      <input type="text">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <label>If Alien, ACR #:</label>
+      <input type="text">
+    </div>
+  </div>
+
+  <div class="two-column-section">
+    <div class="column">
+      <label>Legal Status:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox"> Citizen of RP</label>
+        <label><input type="checkbox"> Permanent Resident</label>
+        <label><input type="checkbox"> Granted permission as student (limited visa)</label>
+        <label><input type="checkbox"> Granted permission as child/spouse of worker</label>
+        <label><input type="checkbox"> Other visa</label>
+        <label><input type="checkbox"> Legal status not known</label>
+      </div>
+    </div>
+    <div class="column">
+      <label>Civil Status:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox"> Single</label>
+        <label><input type="checkbox"> Married</label>
+        <label><input type="checkbox"> Divorced</label>
+        <label><input type="checkbox"> Widowed</label>
+        <label><input type="checkbox"> Separated</label>
+      </div>
+      <br>
+      <label>Employment:</label>
+      <label><input type="checkbox"> Working</label>
+      <label><input type="checkbox"> Not working</label>
+      <label>If working, Office/Bus. Tel. #:</label>
+      <input type="text">
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- FATHER'S INFORMATION -->
+<div class="section">
+  <div class="two-column-section">
+    <div class="column">
+      <div class="section-title">FATHER'S INFORMATION:</div>
+      <label>Surname:</label><input type="text">
+      <label>First Name:</label><input type="text">
+      <label>Middle Name:</label><input type="text">
+      <label>Auxiliary Name:</label><input type="text">
+      <label>Occupation/Employment:</label><input type="text">
+      <label>Educational Attainment:</label><input type="text">
+      <label>Parent's Address:</label><input type="text">
+      <label>Zip Code:</label><input type="text">
+    </div>
+
+    <!-- MOTHER'S INFORMATION -->
+    <div class="column">
+      <div class="section-title">MOTHER'S INFORMATION:</div>
+      <label>Surname:</label><input type="text">
+      <label>First Name:</label><input type="text">
+      <label>Middle Name:</label><input type="text">
+      <label>Auxiliary Name:</label><input type="text">
+      <label>Occupation/Employment:</label><input type="text">
+      <label>Educational Attainment:</label><input type="text">
+      <label>Parent's Tel. #:</label><input type="text">
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- GUARDIAN'S INFORMATION -->
+<div class="section">
+  <div class="section-title">GUARDIAN'S INFORMATION: <em>(If Applicable)</em></div>
+  <div class="row">
+    <div class="column">
+      <label>Surname:</label><input type="text">
+      <label>First Name:</label><input type="text">
+      <label>Middle Name:</label><input type="text">
+      <label>Auxiliary Name:</label><input type="text">
+      <label>Occupation/Employment:</label><input type="text">
+      <label>Off./Bus. Tel. #:</label><input type="text">
+    </div>
+    <div class="column">
+      <label>Guardian's Address:</label><input type="text">
+      <label>Zip Code:</label><input type="text">
+      <label>Tel. #:</label><input type="text">
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
